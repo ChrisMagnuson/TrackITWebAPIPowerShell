@@ -184,7 +184,7 @@ function Add-TrackITWorkOrderNote {
     Invoke-RestMethod -Method Post -Uri $URL -Headers $Headers -ContentType "text/json" -Body ($PSBoundParameters | ConvertTo-Json)
 }
 
-
+<#
 Export-ModuleMember -function Invoke-TrackITLogin 
 Export-ModuleMember -function Get-TrackITWorkOrder
 Export-ModuleMember -function Edit-TrackITWorkOrder
@@ -192,3 +192,4 @@ Export-ModuleMember -function New-TrackITWorkOrder
 Export-ModuleMember -function Edit-TrackITWorkOrderStatus
 Export-ModuleMember -function Close-TrackITWorkOrder
 Export-ModuleMember -function Add-TrackITWorkOrderNote
+#>
